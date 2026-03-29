@@ -1,12 +1,11 @@
 <?php
-    function fatorial(){
-        for ($i=5; $i < $num; $i--) { 
-            $i*$num;
+    function fatorial($n){
+        $fat=1;
+        for ($i=$n; $i >= 1; $i--) { 
+            $fat = $fat*$i;
         }
+        return $fat;
     }
-
     $num=5;
-    echo num($num);
-
-    //falta fazer
+    echo "O fatorial é:" .fatorial($num);
 ?>

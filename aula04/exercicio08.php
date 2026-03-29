@@ -1,13 +1,17 @@
 <?php
-    function gera_numero(){
-        $sorteio = rand(1,50);
-        echo $sorteio ."<br>";
+function gera_sorteio()
+{
+    $num = [];
+    for ($i = 1; $i < 11; $i++) {
+        $sorteio = rand(1, 50);
+        $num[$i] = $sorteio;
+    }
+    foreach ($num as $resultado) {
+        echo $resultado ," - ";
     }
 
-    for ($i=1; $i < 11 ; $i++) { 
-        gera_numero();    
-    }
+}
 
-    //falta fazer
+gera_sorteio();
 
 ?>
