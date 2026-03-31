@@ -1,0 +1,17 @@
+[
+    {
+        "produto": "Esmalte",
+        "preco": 2,
+        "quantidade": "5"
+    },
+    {
+        "produto": "Acetona",
+        "preco": 5,
+        "quantidade": "2"
+    },
+    {
+        "produto": "Lixa",
+        "preco": 3,
+        "quantidade": "1"
+    }
+]
