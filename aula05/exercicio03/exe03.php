@@ -1,8 +1,21 @@
 <?php
-$json = '{"produto": "Algodão", "preco":4, "quantidade": 3}';
+$dados = file_get_contents("produtos.json");
+$produtos = json_decode($dados, true);
 
-    $produtos=json_decode($json,true);
-    print_r($produtos);
+$novo = [
+    "nome"=> "Algodão", 
+    "preco"=>4, 
+    "quantidade"=> 3
+];
+
+$produtos[] = $novo;
+
+$json_novo = json_encode($produtos, JSON_PRETTY_PRINT);
+
+file_put_contents("produtos.json", $json_novo);
+
+echo "Produto add";
+
 ?>
 
-<!-- procurar no convertendo JSON para array (ou objeto) -->
+

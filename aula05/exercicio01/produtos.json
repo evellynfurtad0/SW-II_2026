@@ -1,16 +1,16 @@
 [
     {
-        "produto": "Esmalte",
+        "nome": "Esmalte",
         "preco": 2,
         "quantidade": "5"
     },
     {
-        "produto": "Acetona",
+        "nome": "Acetona",
         "preco": 5,
         "quantidade": "2"
     },
     {
-        "produto": "Lixa",
+        "nome": "Lixa",
         "preco": 3,
         "quantidade": "1"
     }
